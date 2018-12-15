@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editName"
+        android:layout_width="102dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/name"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="92dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="200dp"
+        android:background="@android:drawable/checkbox_on_background"
+        android:text="Save"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="76dp"
+        android:background="@android:drawable/btn_dialog"
+        android:lineSpacingExtra="8sp"
+        android:text="Cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/save"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-19dp"
+        android:text="Age"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/ageid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="date" />
+
+
+</RelativeLayout>
+
+
+

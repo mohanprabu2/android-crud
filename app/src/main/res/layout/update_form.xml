@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".Update">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="333dp"
+        android:layout_marginEnd="200dp"
+        android:background="@android:drawable/stat_sys_upload"
+        android:text="Update"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="70dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="138dp"
+        android:background="@android:drawable/btn_dialog"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="200dp"
+        android:background="@android:drawable/ic_input_delete"
+        android:text="Delete"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:visibility="invisible"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editid"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-107dp"
+        android:layout_marginBottom="259dp"
+        android:text="Age"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/ageid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-1dp"
+        android:ems="10"
+        android:inputType="date" />
+
+
+</RelativeLayout>
+
+
+
